@@ -1,0 +1,50 @@
+/*imperative program*/void main() {
+	int breite = 0;
+	while(!kornDa()){
+		linksUm();
+		breite = bisZurWand();
+		nimm();
+		kehr();
+		bisZurWand();
+		nimm();
+		kehr();
+		schritte(breite);
+		drehe(3);
+		schritte(2);
+	}	    
+	while(kornDa()){
+		nimm();
+	}
+}
+
+int bisZurWand(){
+	int schritte = 0;
+	while(vornFrei()){
+		vor();
+		schritte++;
+	}
+	return schritte;
+}
+
+void kehr(){
+	linksUm();
+	linksUm();
+}
+
+void schritte(int schritte){
+	int i = 0;
+	while(i < schritte){
+		if(vornFrei()){
+			vor();
+		}
+		i++;
+	}
+}
+
+void drehe(int drehungen){
+	int i = 0;
+	while(i < drehungen){
+		linksUm();
+		i++;
+	}
+}

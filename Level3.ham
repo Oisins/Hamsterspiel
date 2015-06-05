@@ -1,0 +1,17 @@
+/*imperative program*/void main() {
+  	bisZurWand();
+  	kehr();
+  	bisZurWand();
+    
+}
+
+void bisZurWand(){
+	while(vornFrei()){
+    	vor();
+    }
+}
+
+void kehr(){
+	linksUm();
+	linksUm();
+}

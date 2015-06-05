@@ -1,0 +1,17 @@
+/*imperative program*/void main() {
+    vor();
+	vor();
+	vor();
+	vor();
+	vor();
+	vor();
+	vor();
+	linksUm();
+	vor();
+	vor();
+	vor();
+	vor();
+	vor();
+	vor();
+	nimm();
+}

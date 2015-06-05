@@ -1,0 +1,43 @@
+/*imperative program*/void main() {
+    vor();
+    vor();
+    rechtsUm();
+    vor();
+    vor();
+    nimm();
+    kehr();
+    vor();
+    vor();
+    vor();
+    vor();
+    linksUm();
+    vor();
+    vor();
+    nimm();
+    kehr();
+    vor();
+    vor();
+    vor();
+    vor();
+    vor();
+    vor();
+    nimm();
+    rechtsUm();
+    vor();
+    vor();
+    vor();
+    vor();	
+    nimm();
+    linksUm();
+    vor();
+    nimm();
+}
+
+void kehr(){
+	linksUm();
+	linksUm();
+}
+void rechtsUm(){
+	kehr();
+	linksUm();
+}

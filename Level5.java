@@ -1,5 +1,25 @@
 //Copyright © 2015 Oisin Smith Some Rights Reserved
 import de.hamster.debugger.model.Territorium;import de.hamster.debugger.model.Territory;import de.hamster.model.HamsterException;import de.hamster.model.HamsterInitialisierungsException;import de.hamster.model.HamsterNichtInitialisiertException;import de.hamster.model.KachelLeerException;import de.hamster.model.MauerDaException;import de.hamster.model.MaulLeerException;import de.hamster.model.MouthEmptyException;import de.hamster.model.WallInFrontException;import de.hamster.model.TileEmptyException;public class Level5 extends de.hamster.debugger.model.IHamster implements de.hamster.model.HamsterProgram {void zugKI(){
+	int feld1 = pruefeKorn(1); // Diese Variablen enthalten wer in welchem feld ist.
+	int feld2 = pruefeKorn(2); // Siehe unter für welche Var welchem Feld entspricht.
+	int feld3 = pruefeKorn(3);
+	int feld4 = pruefeKorn(4);
+	int feld5 = pruefeKorn(5);
+	int feld6 = pruefeKorn(6);
+	int feld7 = pruefeKorn(7);
+	int feld8 = pruefeKorn(8);
+	int feld9 = pruefeKorn(9);
+	/*
+  	7|8|9
+  	4|5|6
+  	1|2|3
+	*/
+	
+	
+	
+	
+	
+	
 	
 	
 	setzteKornKI(1); //Am ende eures Codes muss hier ein wert landen!

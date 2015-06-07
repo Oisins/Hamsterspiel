@@ -34,7 +34,7 @@ ALLES CODED UNTER DIESEM STRICH DARF NICHT VERÄNDET WERDEN! Ihr dürft es aber le
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 public void main(){
-	boolean intro = true; // Hier das Intro an/aus stellen
+	boolean intro = false; // Hier das Intro an/aus stellen
 	boolean enableKI = false;
 	if(intro){intro();}
 	nimmAnzahl(20);
@@ -54,8 +54,12 @@ public void main(){
    			spieler = 1;
    		}
    		gewonnen = gewonnen();
+   	}
+   	if(gewonnen != 3){
+   		schreib("Herzlich glückwunsch Spieler " + gewonnen + ". Du hast gewonnen!");
+   	}else{
+   		schreib("Unentschieden!");
    	}	
-   	schreib("Herzlich glückwunsch Spieler " + gewonnen + ". Du hast gewonnen!");
    	schreib("Nicht vergessen das Board zu resetten und danke fürs Spielen!");
 	
 }
@@ -95,6 +99,8 @@ int gewonnen(){
 	(feld3 == 2 && feld5 == 2 && feld7 == 2)||
 	(feld1 == 2 && feld5 == 2 && feld8 == 2)){
 		return 2;
+	}else if(feld1 != 0 && feld2 != 0 && feld3 != 0 && feld4 != 0 && feld5 != 0 && feld6 != 0 && feld7 != 0 && feld8 != 0 && feld9 != 0){
+		return 3;
 	}else{
 		return 0;
 	}

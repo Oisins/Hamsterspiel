@@ -1,0 +1,21 @@
+//Copyright © 2015 Oisin Smith All Rights Reserved
+void main() {
+	int schritte = 0;
+    do{
+    	setzteKorn(schritte % 2);
+    	vor();
+    	sch ritte++;
+    }while(vornFrei());
+}
+
+
+void setzteKorn(int anzahl){
+	int i = 0;
+	while(kornDa()){
+		nimm();
+	}
+	while(anzahl > i){
+		gib();
+		i++;
+	}
+}

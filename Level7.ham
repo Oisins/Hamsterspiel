@@ -1,4 +1,4 @@
-//Copyright © 2015 Oisin Smith All Rights Reserved
+/*imperative program*///Copyright © 2015 Oisin Smith All Rights Reserved
 void main() {
 	// Hamster beginnt mit 20 Körnern
 	int schritte = 0;
